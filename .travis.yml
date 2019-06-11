@@ -5,3 +5,9 @@ jdk:
 install:
 - mvn -N io.takari:maven:wrapper
 - ./mvnw install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+
+deploy:
+ provider: heroku
+ api-key: 
+  secure: 2eb426fe-bbac-4700-a545-e0ca3fcf9baf
+ app: dj-spring-boot
