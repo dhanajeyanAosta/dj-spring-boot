@@ -1,6 +1,11 @@
 language: java
 jdk: oraclejdk11
 
+cache:
+  directories:
+  - $HOME/.m2
+install: true
 
-script:
-- ./mvnw clean install -B
+script: 
+   - sudo mvn clean package
+   - sudo mvn install
